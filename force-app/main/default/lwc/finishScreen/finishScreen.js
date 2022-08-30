@@ -1,43 +1,21 @@
-import { LightningElement, track } from 'lwc';
-import successScreen from './templates/suceessFinishScreen.html';
-import failureScreen from './templates/failureFinishScreen.html';
-import defaultScreen from './templates/defaultFinishScreen.html';
+import { api, LightningElement } from 'lwc';
+import success from './templates/successFinishScreen.html';
+import failure from './templates/failureFinishScreen.html';
+import def from './templates/defaultFinishScreen.html';
 
 export default class FinishScreen extends LightningElement {
    
-    pageRef = 0;
-    hideScreen = true;
-
-    @track
-    screenState = {
-        0 : defaultScreen,
-        1 : failureScreen,
-        2 : successScreen
-    }
-
-    connectedCallback(){
-        this.template.addEventListener('switchScreen',this.switchScreen());
-        this.template.addEventListener('openScreen',this.openScreen());
-    }
+    @api
+    pageRef;
 
     render(){
-        return this.screenState[this.pageRef]
-    }
-
-    switchScreen(){
-        if(this.pageRef===2){
-            this.pageRef = 0;
+        console.log('rendering...');
+        if (this.pageRef=='success') {
+            return success;
         }
-        else {
-            this.pageRef += 1;
+        if (this.pageRef=='failure') {
+            return failure;
         }
-    }
-
-    openScreen(){
-        this.hideScreen = false;
-    }
-
-    closeScreen(){
-        this.hideScreen = true;
+        return def;
     }
 }

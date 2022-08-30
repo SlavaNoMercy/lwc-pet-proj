@@ -1,3 +1,37 @@
 <template>
-    
+  <template if:false={hideModal}>
+    <div class="container" onclick={closemodal}>  
+        <section role="dialog">
+            <c-finish-screen page-ref={currentScreen}></c-finish-screen>
+            <footer>
+                <div class="links">
+                    links
+                </div>
+            </footer>    
+        </section>
+    </div>
+  </template>
+  <template if:true={hideModal}>
+    <div class="modalControl">
+      <div class="centralPanel">
+        <div data-id="success" class="button green" onclick={switchScreen}>
+            success
+        </div>
+        <div data-id="failure" class="button red" onclick={switchScreen}>
+            failure
+        </div>
+        <div data-id="default" class="button muted" onclick={switchScreen}>
+            default
+        </div>
+      </div>
+      <div class="selection">
+        <p>
+            Selected finish screen: {currentScreen}
+        </p>
+        <div class="button" onclick={openModal}>
+            open
+        </div>
+      </div>
+    </div>
+  </template>  
 </template>

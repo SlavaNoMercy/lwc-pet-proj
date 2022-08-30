@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+}
+
+.modalControl {
+    width: 100%;
+    height: 200px;
+}
+
+.centralPanel {
+    display:flex;
+    flex-wrap: nowrap;    
+}
+
+.selection {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 300px;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 16px;
+    width: 97px;
+    height: 43px;
+    text-align: center;
+    font-size: 24px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: azure;
+}
+
+.green {
+    background-color: rgb(152, 255, 152);
+    border-color: rgb(96, 250, 76);
+}
+
+.red {
+    background-color: rgb(255, 152, 152);
+    border-color: rgb(250, 96, 96);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.button.green:hover {
+    cursor: pointer;
+    background-color: rgb(107, 202, 107);
+}
+
+.button.red:hover {
+    cursor: pointer;
+    background-color: rgb(202, 107, 107);
+}
+
+
+
