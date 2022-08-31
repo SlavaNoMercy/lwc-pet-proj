@@ -3,19 +3,25 @@ import { LightningElement } from 'lwc';
 export default class SimpleModalMock extends LightningElement {
 
     currentScreen = "default";
-    hideModal = true;
 
-    openScreen(){
-        this.hideScreen = false;
-    }
-
-    closeScreen(){
-        this.hideScreen = true;
-    }
-
-    switchScreen(event){
-        this.currentScreen = event.currentTarget.dataset.id;
-        console.log('current screen: '+this.currentScreen);
+    nextScreen(){
+        console.log('next screen works')
+        if (this.currentScreen==="default") {
+            this.currentScreen = "success";
+            return;
+        }
+        if (this.currentScreen==="success") {
+            this.currentScreen = "failure";
+            return;
+        }
+        if (this.currentScreen==="failure") {
+            this.currentScreen = "default";
+            return;
+        }
     }
     
+    prevScreen(){
+        this.nextScreen();
+        this.nextScreen();
+    }
 }

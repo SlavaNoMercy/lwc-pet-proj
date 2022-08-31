@@ -1,3 +1,7 @@
-.someClass{
-    width: auto;
+.content{
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -1,0 +1,43 @@
+.navbar {
+    margin: auto;
+    margin-top: 30px;
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 16px;
+    width: 97px;
+    height: 43px;
+    text-align: center;
+    font-size: 24px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: gray;
+    user-select: none;
+}
+
+.prev {
+    background-color: rgb(187, 181, 181);
+    border-color: rgb(27, 26, 26);
+}
+
+.next {
+    background-color: rgb(152, 255, 152);
+    border-color: rgb(96, 250, 76);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.button.next:hover {
+    cursor: pointer;
+    background-color: rgb(107, 202, 107);
+}
