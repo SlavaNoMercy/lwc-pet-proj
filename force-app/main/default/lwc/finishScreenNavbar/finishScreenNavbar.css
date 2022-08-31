@@ -10,26 +10,26 @@
 }
 
 .button {
-    border: 1px solid black;
     border-radius: 16px;
-    width: 97px;
-    height: 43px;
+    width: -webkit-fill-available;
+    height: 80px;
     text-align: center;
+    display: flex;
     font-size: 24px;
     margin: auto;
     margin-top: 50px;
     background-color: gray;
     user-select: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .prev {
-    background-color: rgb(187, 181, 181);
-    border-color: rgb(27, 26, 26);
+    background: linear-gradient(149deg, rgb(2 0 36) 0%, rgb(0 0 0 / 63%) 20%, rgb(253 253 253 / 21%) 100%, rgba(9,197,236,1) 100%, rgba(0,212,255,1) 100%)
 }
 
 .next {
-    background-color: rgb(152, 255, 152);
-    border-color: rgb(96, 250, 76);
+    background: linear-gradient(350deg, rgba(43,253,39,1) 8%, rgba(58,180,74,0.020045518207282953) 100%);
 }
 
 .button:hover {
@@ -39,5 +39,5 @@
 
 .button.next:hover {
     cursor: pointer;
-    background-color: rgb(107, 202, 107);
+    background-color: rgb(37 239 37 / 24%);
 }
