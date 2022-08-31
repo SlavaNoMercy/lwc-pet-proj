@@ -1,0 +1,44 @@
+.container {
+    width: 60%;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    align-content: space-between
+}
+
+.summary {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.socialFooter { 
+    align-items:center;
+    display:flex;
+    justify-content:center;
+
+}
+.socialFooter .socialLink { 
+    padding:10px;
+}
+
+.socialFooter .socialLink img {
+    width:32px;
+    filter: invert(21%) sepia(99%) saturate(6259%) hue-rotate(241deg) brightness(98%) contrast(95%);
+}
+
+.titleImage {
+    width:50px; 
+}
+
+.defHeader {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

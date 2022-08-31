@@ -1,0 +1,31 @@
+<template>
+  <div class="container">
+    <c-finish-screen page-ref={currentScreen}>
+      <div class="defHeader" slot="defaultHeader">
+        <img class="titleImage" src="/sfsites/c/resource/socialIcons/FooterIcons/Slack.svg">
+      </div>
+      <div slot="footer">
+        <div class="links">
+          <div class="socialFooter">
+            <a href="#" class="socialLink">
+                <img src="/sfsites/c/resource/socialIcons/FooterIcons/LinkedIn.svg" />
+            </a>
+            <a href="#" class="socialLink">
+                <img src="/sfsites/c/resource/socialIcons/FooterIcons/Facebook.svg" />
+            </a>
+            <a href="#" class="socialLink">
+                <img src="/sfsites/c/resource/socialIcons/FooterIcons/Instagram.svg" />
+            </a>
+            <a href="#" class="socialLink">
+                <img src="/sfsites/c/resource/socialIcons/FooterIcons/Youtube.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </c-finish-screen>
+    <p class="summary">
+      You're watching "{currentScreen}" finish screen example.
+    </p>
+  </div>
+  <c-finish-screen-navbar onnextpage={nextScreen} onprevpage={prevScreen}></c-finish-screen-navbar>
+</template>
