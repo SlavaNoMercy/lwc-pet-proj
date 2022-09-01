@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1000px;
+    margin: auto;
+    height: 300px;
+    clip-path: polygon(25% 0, 75% 100%, 25% 100%, 25% 0, 75% 100%, 25% 100%, 25% 100%, 75% 100%, 75% 0);
+    -webkit-box-shadow: 0px -2px 35px 20px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px -2px 35px 20px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px -2px 35px 20px rgba(34, 60, 80, 0.2) inset;
+}
+
+.slottedImage {
+    width: 45%;
+    height: 400px;
+    background-color: black;
+    z-index: 2;
+}
+
+.header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    width: 500px;
+    margin: auto;
+}
+
+.description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    width: 500px;
+    margin: auto;
+}

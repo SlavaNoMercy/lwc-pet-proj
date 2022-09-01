@@ -1,3 +1,5 @@
 import { LightningElement } from 'lwc';
 
-export default class CarouselView extends LightningElement {}
+export default class CarouselView extends LightningElement {
+    
+}

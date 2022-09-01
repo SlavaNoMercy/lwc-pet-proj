@@ -1,11 +1,14 @@
 <template>
-    <h1>
+    <h1 class="header">
         Carousel view of... anything
     </h1>
-    <p>
-        Understanding slots implementation
+    <p class="description">
+        Understanding slots implementation 
     </p>
-    <c-carousel-view>
-        <!-- here passing components -->
+    <button onclick={delayF}>click</button>
+    <c-carousel-view class="container">
+        <c-carousel-element slot="prev" image={prevSlot}></c-carousel-element>
+        <c-carousel-element slot="current" image={currentSlot}></c-carousel-element>
+        <c-carousel-element slot="next" image={nextSlot}></c-carousel-element>
     </c-carousel-view>
 </template>
