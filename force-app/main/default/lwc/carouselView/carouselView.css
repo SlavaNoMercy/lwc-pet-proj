@@ -1,13 +1,7 @@
 .block {
-    margin: 0;
-    padding: 0;
-    width: 400px;
-    height: 298px;
-    overflow: hidden;
-    z-index: 2;
-    border: 1px solid #141414;
-    position: relative;
-}
+    position: absolute;
+} 
+
 .block::after {
     content: "";
     position: absolute;
@@ -18,55 +12,43 @@
     top: 0;
     transition: opacity 0.6s;
     opacity: 1;
+  }
+.block:hover::after {
+   opacity: 0;
 }
-/* .block:hover::after {
-    opacity: 1;
-} */
+
+.prev.block {
+    overflow: hidden;
+    left: -140px;
+}
+
+.prev.block::after{
+    background: linear-gradient(90deg, rgba(0,0,0,0.5662640056022409) 0%, rgba(0,0,0,0.020045518207282953) 75%);
+}
+
+.next.block::after {
+    background: linear-gradient(90deg, rgba(0,0,0,0.020045518207282953) 0%, rgba(0,0,0,0.5662640056022409) 75%);
+}
+
+.next.block {
+    overflow: hidden;
+    right: -140px;
+}
+
+.currentblock {
+    margin: auto;
+}
+
+.slot {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #141414;
+    position: relative;
+}
 
 .current {
     min-width: 400px;
-}
-
-.prev {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.02) 76%);
-}
-
-.next {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.02) 24%, rgba(0,0,0,1) 100%);
-}
-
-@keyframes showEffect {
-    0% { display: none; visibility: hidden; }
-    100% { display: block; visibility: block;  }
-}
-
-@-moz-keyframes showEffect {
-    0% { display: none; visibility: hidden; }
-    100% { display: block; visibility: block;  }
-
-}
-
-@-webkit-keyframes showEffect {
-    0% { display: none; visibility: hidden; }
-    100% { display: block; visibility: block;  }
-
-}
-
-.css_only {
-    -moz-animation-name: showEffect;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-in;
-    -moz-animation-duration: 2.3s;
-
-    -webkit-animation-name: showEffect;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: 2.3s;
-
-    animation-name: showEffect;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2.3s;
 }

@@ -4,17 +4,12 @@
     width: 1000px;
     margin: auto;
     height: 300px;
-    clip-path: polygon(25% 0, 75% 100%, 25% 100%, 25% 0, 75% 100%, 25% 100%, 25% 100%, 75% 100%, 75% 0);
+    overflow: hidden;
+    position: relative;
+    /* clip-path: polygon(20% 0, 80% 100%, 20% 100%, 20% 0, 80% 100%, 20% 100%, 20% 100%, 80% 100%, 80% 0); */
     -webkit-box-shadow: 0px -2px 35px 20px rgba(34, 60, 80, 0.2) inset;
     -moz-box-shadow: 0px -2px 35px 20px rgba(34, 60, 80, 0.2) inset;
     box-shadow: 0px -2px 35px 20px rgba(34, 60, 80, 0.2) inset;
-}
-
-.slottedImage {
-    width: 45%;
-    height: 400px;
-    background-color: black;
-    z-index: 2;
 }
 
 .header {

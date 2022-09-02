@@ -1,5 +1,11 @@
 <template>
-    <slot class="block prev" name="prev"></slot>
-    <slot class="block current" name="current"></slot>
-    <slot class="block next" name="next"></slot>  
+  <div class="prev block">  
+    <slot class="slot prev" name="prev"></slot>
+  </div>
+  <div class="currentblock">  
+    <slot class="slot current" name="current"></slot>
+  </div>
+  <div class="next block">  
+    <slot class="slot next" name="next"></slot>  
+  </div>
 </template>

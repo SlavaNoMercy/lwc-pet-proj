@@ -41,6 +41,10 @@ export default class CentralWindow extends LightningElement {
         if(this.currentIndex===this.testStruct.length-1){
             this.currentIndex = 0;
         }
-        setTimeout(() => this.delayF(),8000);
+        setTimeout(() => this.delayF(),5000);
+    }
+
+    connectedCallback(){
+        this.delayF();
     }
 }
