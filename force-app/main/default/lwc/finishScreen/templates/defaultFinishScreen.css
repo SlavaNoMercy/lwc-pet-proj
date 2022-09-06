@@ -5,6 +5,7 @@
     padding: 5px;
     display: block;
     text-align: center;
+    overflow: hidden;
     line-height: 60px;
     border-radius: 103px;
     background-color: #f7f7f7;

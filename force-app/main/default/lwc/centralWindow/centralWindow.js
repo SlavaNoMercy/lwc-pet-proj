@@ -41,6 +41,7 @@ export default class CentralWindow extends LightningElement {
         if(this.currentIndex===this.testStruct.length-1){
             this.currentIndex = 0;
         }
+        this.dispatchEvent(new CustomEvent('nextslide'));
         setTimeout(() => this.delayF(),5000);
     }
 
