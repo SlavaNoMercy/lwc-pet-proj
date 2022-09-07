@@ -2,14 +2,17 @@
     max-width: 400px;
     min-width: 400px;
     height: 300px;
-    /* animation: slide-in 1000ms; */
 }
 
-/* @keyframes slide-in {
+.animation {
+  animation: slide-in 1000ms;  
+}
+
+ @keyframes slide-in {
     from {
       transform: translateX(-100%);
     }
     to {
       transform: translateX(0%);
     }
-  } */
+  } 

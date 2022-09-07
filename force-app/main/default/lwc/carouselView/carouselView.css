@@ -1,6 +1,6 @@
 .block {
     position: absolute;
-    display: none;
+    /* display: none; */
 } 
 
 .block::after {
@@ -38,7 +38,7 @@
 
 .currentblock {
     margin: auto;
-    display: none;
+    /* display: none; */
 }
 
 .slot {
@@ -55,7 +55,7 @@
     min-width: 400px;
 }
 
-.animation {
+/* .animation {
     display: block;
     animation: slide-in;
 }
@@ -67,4 +67,4 @@
     to {
       transform: translateX(0%);
     }
-  }
+  } */

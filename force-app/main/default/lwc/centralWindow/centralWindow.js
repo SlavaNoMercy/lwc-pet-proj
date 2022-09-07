@@ -36,16 +36,25 @@ export default class CentralWindow extends LightningElement {
         }
     }
 
-    delayF(){
-        this.currentIndex += 1;
-        if(this.currentIndex===this.testStruct.length-1){
-            this.currentIndex = 0;
+    handlePrev(){
+        if (this.currentIndex===0) {
+            this.currentIndex = this.testStruct.length-1;
+        } else {
+            this.currentIndex -= 1;
         }
-        this.dispatchEvent(new CustomEvent('nextslide'));
-        setTimeout(() => this.delayF(),5000);
+        this.template.querySelectorAll('c-carousel-element').forEach((element) => {
+            element.animation();
+        })
     }
 
-    connectedCallback(){
-        this.delayF();
+    handleNext(){
+        if (this.currentIndex===this.testStruct.length-1) {
+            this.currentIndex = 0;
+        } else {
+            this.currentIndex += 1;
+        }
+        this.template.querySelectorAll('c-carousel-element').forEach((element) => {
+            element.animation();
+        })
     }
 }
