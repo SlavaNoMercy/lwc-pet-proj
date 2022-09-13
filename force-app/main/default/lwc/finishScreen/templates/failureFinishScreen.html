@@ -1,10 +1,26 @@
-<template> 
+<template>
     <slot name="failureHeader"></slot>
-    <div class="failureTitle">
-        smthng
-    </div>
-    <div class="failureDescription">
-        smthng else
+    <div class="container">
+        <lightning-icon icon-name="utility:error" variant="error" size="large" alternative-text="Error!" title="Error">
+        </lightning-icon>
+        <div class="failureTitle">
+            Error
+        </div>
+        <div class="failureDescription">
+            Something went wrong...
+        </div>
+        <div class="availableActions">
+            <div class="action">
+                <lightning-icon icon-name="utility:chevronleft" alternative-text="Left" title="Left"></lightning-icon>
+            </div>
+            <div class="description">
+                Error occured while trying to connect. Please try again later.
+            </div>
+            <div class="action">
+                <lightning-icon icon-name="utility:chevronright" alternative-text="Right" title="Right">
+                </lightning-icon>
+            </div>
+        </div>
     </div>
     <slot name="footer"></slot>
 </template>

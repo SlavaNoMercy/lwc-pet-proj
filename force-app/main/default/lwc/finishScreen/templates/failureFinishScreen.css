@@ -1,3 +1,30 @@
-.someClass{
-    width: auto;
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-content: center;
+}
+
+.availableActions {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+
+.failureTitle {
+    color: #000000;
+    font-size: x-large;
+}
+
+.failureDescription {
+    font-size: larger;
+    color: #000000;
+}
+
+.description {
+    font-size: medium;
+    color: #616161;
 }
